@@ -10,7 +10,7 @@ import time
 DEVICE = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 def get_args():
-    parser = argparse.ArgumentParser(description="Genomic Reading-Frame Entropy Translator & Analyzer.\nRun entropy analysis on genomic windows from a FASTA file.")
+    parser = argparse.ArgumentParser(description="Compute and save the ESM2 embeddings from all the windows of a genome.")
 
     # Mandatory arguments
     parser.add_argument('-f','--fasta_path', type=str, help='Path to the input FASTA file.')
